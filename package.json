@@ -1,0 +1,41 @@
+{
+  "name": "translitterify",
+  "version": "1.0.0",
+  "description": "Nice flattening of special UNICODE characters to their ASCII corrispectives",
+  "main": "index.es5.js",
+  "jsnext:main": "index.js",
+  "files": [
+    "index.es5.js"
+  ],
+  "scripts": {
+    "test": "ava --require babel-register",
+    "prepublish": "babel index.js --out-file index.es5.js",
+    "postpublish": "rimraf index.es5.js && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pasqLisena/translitterify.git"
+  },
+  "keywords": [
+    "unicode", "ascii", "text", "converter"
+  ],
+  "author": "Pasquale Lisena <pasquale.lisena@eurecom.fr> (http://pasqlisena.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pasqLisena/translitterify/issues"
+  },
+  "homepage": "https://github.com/pasqLisena/translitterify#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-cli": "6.6.5",
+    "babel-eslint": "^6.0.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "6.7.2",
+    "rimraf": "^2.5.2"
+  },
+  "jshintConfig": {
+    "esversion": 6
+  }
+}

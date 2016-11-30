@@ -13,7 +13,7 @@ npm install --save translitterify
 ```js
 var translitterify = require('translitterify');
 
-translitterify('world'); // Hello world
+translitterify('Ronaldo Luís Nazário de Lima'); // Ronaldo Luis Nazario de Lima
 ```
 
 ## API
